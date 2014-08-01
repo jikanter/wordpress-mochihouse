@@ -52,6 +52,6 @@
 		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'mochihouse' ), __( '1 Comment', 'mochihouse' ), __( '% Comments', 'mochihouse' ) ); ?></span>
 		<?php endif; ?>
 
-		<?php edit_post_link( __( 'Edit', 'mochihouse' ), '<span class="edit-link">', '</span>' ); ?>
+		<?//php edit_post_link( __( 'Edit', 'mochihouse' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
