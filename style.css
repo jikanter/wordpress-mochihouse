@@ -724,13 +724,26 @@ object {
 }
 .gallery-caption {}
 
+/* BEGIN MOCHI */
+
 .mochi-splash-art { 
 	margin: 1px;
 }
 
-.mochi-splash-sm { 
-	vertical-align: left;
-	width: 20px;
-	height: 20px;
-	margin: 1px;
+.mochi-splash-sm ul { 
+	clear: both;
+	margin-left: 66%;
 }
+
+.mochi-splash-sm li { 
+	list-style-type: none;
+	display: inline;
+}
+
+.mochi-splash-sm img { 
+	display: inline;
+	max-width: 10%;
+	max-height: 10%;
+}
+
+.mochi-splash-sm {}
