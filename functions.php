@@ -104,6 +104,28 @@ function mochihouse_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'mochihouse_scripts' );
 
+function mochi_artist_type_init() { 
+	register_post_type('artist', 
+		array('labels' => array(
+								'name' => __('Artists', 'mochihouse'),
+								'singular_name' => __('Artist', 'mochihouse'),
+								'add_new_item'  => __('Add new Artist', 'mochihouse'),
+								'edit_item'     => __('Edit Artist', 'mochihouse'),
+								'view_item'     => __('View Artist', 'mochihouse'),
+								'all_items'     => __('All Artists', 'mochihouse'),
+								'search_items'  => __('Search Artists', 'mochihouse'), 
+							),
+		 	   'description' => __('A Mochi Artist'),
+			   'public' => true,
+			   'menu_position' => 25,
+			   'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields', 'revisions', 'page-attributes', 'post-formats'),
+			   'rewrite' => array('slug' => 'artist', 'with_front' => false ) // do not add the /blog to the front of this 
+		)
+	);
+	
+}
+add_action( 'init', 'mochi_artist_type_init' );
+
 /**
  * Implement the Custom Header feature.
  */
