@@ -171,7 +171,6 @@ p {
 	margin-bottom: 1.5em;
 
 }
-
 //.entry-content p {
 //	max-width: 600px; //DS: This fucks up all the big imagges DAMNN
 //}	
@@ -750,8 +749,3 @@ object {
 }
 
 .mochi-splash-sm {}
-.mochi-copy, 
-.mochi-artist { 
-  font-size: 110%;
-  font-family: "Corbel", Arial, sans-serif;
-}

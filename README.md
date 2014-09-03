@@ -41,3 +41,9 @@ Then, update the stylesheet header in `style.css` and the links in `footer.php` 
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
+
+
+SSH Settings:
+hostname: p3nlpaas001.shr.prod.phx3.secureserver.net
+username: moch2177196047
+password: B=vm0E+E9
