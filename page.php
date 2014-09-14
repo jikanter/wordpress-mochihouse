@@ -25,9 +25,9 @@ get_header(); ?>
 						comments_template();
 					endif;
 				?>
-
+        
 			<?php endwhile; // end of the loop. ?>
-
+      
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

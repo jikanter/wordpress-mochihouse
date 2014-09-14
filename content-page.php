@@ -19,6 +19,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+    <?php wp_nav_menu() ?>
 	</div><!-- .entry-content -->
 	<footer class="entry-footer">
 		<?php edit_post_link( __( 'Edit', 'mochihouse' ), '<span class="edit-link">', '</span>' ); ?>

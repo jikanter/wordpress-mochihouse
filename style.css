@@ -142,6 +142,13 @@ textarea {
 	font-size: 1.6rem;
 	line-height: 1.5; //DS: recommended by W3C http://www.w3.org/TR/2008/REC-WCAG20-20081211/#visual-audio-contrast-visual-presentation
 }
+
+/* set our mochi-house font */
+
+h1 { 
+  font: normal 26pt Corbel, Arial, Verdana, sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
@@ -160,11 +167,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .entry-header h1,
 .entry-header h1 a { 
-	font-weight: bold;
 	margin: 0 0 0 0;
 	word-wrap: break-word;
-	color: black;	
+  color: #8b8b8b;
 	text-decoration: none;
+  margin: 0 0 0 12.5%;
 	
 }
 p {
@@ -725,6 +732,29 @@ object {
 .gallery-caption {}
 
 /* BEGIN MOCHI */
+  
+/* Mochi mobile */
+
+/* don't show the box on mobile devices */
+@media screen and (min-width: 100px) and (max-width: 600px) { 
+  .mochi-box-bottom-line,
+  .mochi-box-top-line,
+  .mochi-box-left-bottom-corner,
+  .mochi-box-right-bottom-corner,
+  .mochi-house-roof-top,
+  .mochi-player-control,
+  .mochi-sidebar-image { display: none; }
+}
+
+/* Typography */
+h2, a, span { 
+  font: normal 18pt Corbel, Arial, Verdana, sans-serif;
+}
+a, span { 
+  font-size: 16pt;
+  color: #8b8b8b;
+}
+
 
 .mochi-splash-art { 
 	margin: 1px;
@@ -732,7 +762,7 @@ object {
 
 .mochi-splash-sm ul { 
 	clear: both;
-	margin-left: 66%;
+	margin-left: 60%;
 }
 
 .mochi-splash-sm li { 
@@ -749,3 +779,141 @@ object {
 }
 
 .mochi-splash-sm {}
+  
+.mochi-splash-player-container { 
+  padding: 1% 0 0 0;
+}
+
+.mochi-about-bio .bio-picture-1, 
+.mochi-about-bio .bio-picture-2,
+.mochi-about-bio .bio-picture-3,
+.mochi-about-bio .bio-picture-4, { 
+  margin-top: 80%;
+  margin-left: 15%; /* just applies for .person-1 */
+}
+
+.mochi-about-bio .bio-picture-2 { 
+  margin-left: 30%;
+}
+
+.mochi-about-bio .bio-picture-3 { 
+  margin-left: 45%;
+}
+
+.mochi-about-bio .bio-picture-4 {
+  margin-left: 60%;
+}
+
+/* sidebar and navigation */
+
+.mochi-left-sidebar {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:77px;
+  height:480px;
+}
+
+.mochi-menu-item { 
+  margin: 80% 0 0 25%;
+}
+
+.mochi-splash-title-container {
+  margin: 2.5% 0 0 25%;
+  color: #8b8b8b;
+}
+.mochi-splash-title {
+  margin-right: 20%;
+}
+
+.mochi-splash-tagline-container {
+  margin: -4% 0 12.5% 12.5%; /* reverse what is in page-content */
+  color: #8b8b8b;
+}
+.mochi-tagline {
+  margin: 0 0 2.5% 0;
+}
+
+.mochi-splash-player-container {
+  position:absolute;
+  left:125px;
+  top:273px;
+  width:387px;
+  height:90px;
+}
+
+.mochi-splash-player-controls-container {
+  position: absolute  ;
+  left:125px;
+  top:388px;
+  width:442px;
+  height:92px;
+  /*width: 60%;
+  margin: 80% 0 0 19.5%;*/
+}
+
+.mochi-box-top-line {
+  position:absolute;
+  left:77px;
+  top:150px;
+  width:490px;
+  height:123px;
+}
+.mochi-box-bottom-line {
+  position:absolute;
+  left:125px;
+  top:363px;
+  width:387px;
+  height:25px;
+}
+
+.mochi-house-roof-top {
+  position:absolute;
+  left:171px;
+  top:117px;
+  width:43px;
+  height:33px;
+  z-index: -1;
+}
+
+.mochi-box-left-bottom-corner {
+  position:absolute;
+  left:77px;
+  top:273px;
+  width:48px;
+  height:140px;
+}
+
+.mochi-box-right-bottom-corner {
+  position:absolute;
+  left:512px;
+  top:273px;
+  width:55px;
+  height:115px;
+}
+
+.mochi-left-sidebar-bottom {
+  position:absolute;
+  left:77px;
+  top:413px;
+  width:48px;
+  height:67px;
+}
+
+/* Mochi player controls */
+
+#mochi-player-play-button { 
+  margin-left: 20%;
+  margin-right: 2.5%;
+  min-size: 5%;
+}
+
+#mochi-player-stop-button { 
+  margin-left: 2.5%;
+  min-size: 5%;
+}
+
+/* HACK. TODO: fixme */
+#menu-menu-1 { display: none; }
+
+

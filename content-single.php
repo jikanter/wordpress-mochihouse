@@ -21,6 +21,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+    
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
