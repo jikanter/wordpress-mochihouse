@@ -29,7 +29,6 @@ if (window.location.href.indexOf("http://mochi.house") != -1) {
 //]]></script>
 </script>
 </head>
-
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<!--a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'mochihouse' ); ?></a-->

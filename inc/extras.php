@@ -30,6 +30,9 @@ function mochihouse_body_classes( $classes ) {
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
 	}
+  if (get_post_meta(get_queried_object_id(), 'details-p')) { 
+    $classes[] = 'details';
+  }
 
 	return $classes;
 }
