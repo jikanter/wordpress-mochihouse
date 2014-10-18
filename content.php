@@ -19,9 +19,9 @@
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'mochihouse' ) ); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'mochihouse' ),
-				'after'  => '</div>',
-			) );
+        'before' => '<div class="page-links">' . __( 'Pages:', 'mochihouse' ),
+        'after'  => '</div>',
+      ) );
 		?>
     
 	</div><!-- .entry-content -->

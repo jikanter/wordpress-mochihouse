@@ -30,6 +30,10 @@ function mochihouse_body_classes( $classes ) {
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
 	}
+  if (get_post_type() == 'project' || get_post_type() == 'artist') { 
+    $classes[] = get_post_type();
+  }
+  // add details pages to posts designated as "details-p" 
   if (get_post_meta(get_queried_object_id(), 'details-p')) { 
     $classes[] = 'details';
   }

@@ -31,10 +31,11 @@
 
 			/* translators: used between list items, there is a space after the comma */
 			$tag_list = get_the_tag_list( '', __( ', ', 'mochihouse' ) );
-
-			if ( ! mochihouse_categorized_blog() ) {
-				// This blog only has 1 category so we just need to worry about tags in the meta text
-				if ( '' != $tag_list ) {
+      // don't show permalinks for project and artist post types
+      if ((get_post_type() != 'project') && (get_post_type() != 'artist')) { 
+			  if ( ! mochihouse_categorized_blog() ) {
+				  // This blog only has 1 category so we just need to worry about tags in the meta text
+				  if ( '' != $tag_list  ) {
 					$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'mochihouse' );
 				} else {
 					$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'mochihouse' );
@@ -47,8 +48,8 @@
 				} else {
 					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'mochihouse' );
 				}
-
-			} // end check for categories on this blog
+      }
+		} // end check for categories on this blog
 
 			printf(
 				$meta_text,

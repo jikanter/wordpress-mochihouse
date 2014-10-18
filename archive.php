@@ -89,7 +89,7 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
-
+      
 			<?php mochihouse_paging_nav(); ?>
 
 		<?php else : ?>

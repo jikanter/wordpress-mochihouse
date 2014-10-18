@@ -420,8 +420,8 @@ a:active {
 .main-navigation ul {
 	list-style: none;
 	list-style-image: none;
-	margin: 0;
-	paddinging: 0 0 10px 0;
+	margin: 0 0 0 10%;
+	paddinging: 0 0 10px 0; /* DAN ? */
 }
 .main-navigation li {
 	float: left;
@@ -432,7 +432,7 @@ a:active {
 	padding: .0 .8em 0 0;
 	font-size: 1.25em;
 	font-weight: 200;
-	color: black;
+	color: #8b8b8b;
 	text-decoration: none;
 }
 .main-navigation ul ul {
@@ -467,6 +467,8 @@ a:active {
 .main-navigation .current_page_item a,
 .main-navigation .current-menu-item a {
 }
+
+
 /* Small menu */
 .menu-toggle {
 	display: none;
@@ -480,6 +482,7 @@ a:active {
 	.main-navigation ul {
 		display: none;
 	}
+  
 }
 .site-main .comment-navigation,
 .site-main .paging-navigation,
@@ -827,7 +830,7 @@ a, span {
 }
 
 .mochi-splash-tagline-container {
-  margin: -4% 0 12.5% 12.5%; /* reverse what is in page-content */
+  margin: -2% 0 12.5% 12.5%; /* reverse what is in page-content */
   color: #8b8b8b;
 }
 .mochi-tagline {
@@ -907,13 +910,115 @@ a, span {
   margin-right: 2.5%;
   min-size: 5%;
 }
+/* HACK. TODO: fixme */
 
 #mochi-player-stop-button { 
   margin-left: 2.5%;
   min-size: 5%;
 }
 
-/* HACK. TODO: fixme */
 
+/* Mochi Details Pages */
 
+.details .site-content, .project .site-content { 
+  /* new york */
+  background: url(http://localhost/~admin/2014/7/21/MochiHouse/wp-content/uploads/2014/10/MochiAboutPage_02.jpg) no-repeat;
+}
 
+.details header[role="banner"],
+.project header[role="banner"] { 
+  margin-top: 0;
+  background-color: #eee;
+}
+
+.details header.entry-title,
+.details article,
+.project header.entry-title,
+.project article { 
+  margin: 42% 0 0 0;
+}
+
+.details .MochiAboutPage-02_ {
+  position:absolute;
+  left:2px;
+  top:0px;
+  width:1022px;
+  height:326px;
+}
+
+.details .MochiAboutPage-04_ {
+  position:absolute;
+  left:54px;
+  top:326px;
+  width:220px;
+  height:191px;
+}
+
+.details .MochiAboutPage-06_ {
+  position:absolute;
+  left:294px;
+  top:326px;
+  width:220px;
+  height:191px;
+}
+
+.details .MochiAboutPage-08_ {
+  position:absolute;
+  left:538px;
+  top:326px;
+  width:216px;
+  height:191px;
+}
+
+.details .MochiAboutPage-10_ {
+  position:absolute;
+  left:778px;
+  top:326px;
+  width:217px;
+  height:191px;
+}
+
+.details .MochiAboutPage-16_ {
+  position:absolute;
+  left:538px;
+  top:538px;
+  width:216px;
+  height:192px;
+}
+
+.details .MochiAboutPage-17_ {
+  position:absolute;
+  left:54px;
+  top:539px;
+  width:220px;
+  height:191px;
+}
+
+.details .MochiAboutPage-18_ {
+  position:absolute;
+  left:294px;
+  top:539px;
+  width:220px;
+  height:191px;
+}
+
+.details .MochiAboutPage-19_ {
+  position:absolute;
+  left:778px;
+  top:539px;
+  width:217px;
+  height:191px;
+}
+
+/* Mochi Mobile */ 
+@media screen and (max-width: 600px) { 
+  .details .site-content, .project .site-content { 
+    background: #fff;
+  }
+}
+
+/* HACK! HACK! */
+.project .post-navigation,
+.artist .post-navigation { 
+  display: none;
+}
